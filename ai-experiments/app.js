@@ -32,7 +32,7 @@ function dateSince (date) {
 }
 
 function accountById (id) {
-  return appData.accounts.filter(item => { return item.id === id })[0]
+  return appData.accounts.filter(function(item){ return item.id === id })[0]
 }
 
 function showLatest () {
