@@ -56,7 +56,7 @@ function book (data) {
   }
   var amount = data.Amount
   if (typeof (amount) === 'object') {
-    amount = data.Amount.Amount
+    amount = data.Amount.amount
   }
 
   accountById('current account').balance -= amount
